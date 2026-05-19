@@ -1,7 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>EverGlow Studio</title>
-  <style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
 
 *{
     margin:0;
@@ -18,6 +26,7 @@ body{
     background:#fffafc;
 }
 
+/* Navbar */
 
 .navbar{
     width:100%;
@@ -28,14 +37,17 @@ body{
     position:fixed;
     top:0;
     z-index:1000;
-    background:rgba(255,255,255,0.1);
+    background:rgba(0,0,0,0.3);
     backdrop-filter:blur(10px);
 }
-.logo{
-    color:white;
-    font-size:32px;
-    font-weight:700;
+
+/* Logo Image */
+
+.logo img{
+    width:180px;
 }
+
+/* Nav Links */
 
 .nav-links{
     display:flex;
@@ -54,12 +66,18 @@ body{
     color:#ffe08a;
 }
 
+/* Hero Section */
 
 .hero{
     height:100vh;
-    background:url('logo.png');
+
+    /* Background Image */
+    background:url('photo.jpg');
+
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
+
     position:relative;
     display:flex;
     justify-content:center;
@@ -76,10 +94,8 @@ body{
 
 .hero-content{
     position:relative;
-    color:white;
     z-index:2;
-}
-.hero-content{
+    color:white;
     animation:fadeIn 2s ease;
 }
 
@@ -98,7 +114,7 @@ body{
 }
 
 .hero-content h1{
-    font-size:70px;
+    font-size:65px;
     margin-bottom:20px;
 }
 
@@ -106,6 +122,8 @@ body{
     font-size:25px;
     margin-bottom:30px;
 }
+
+/* Button */
 
 .btn{
     display:inline-block;
@@ -211,7 +229,7 @@ body{
 
 .gallery-container img:hover{
     transform:scale(1.05);
-box-shadow:0 10px 25px rgba(216,140,160,0.5);
+    box-shadow:0 10px 25px rgba(216,140,160,0.5);
 }
 
 /* Contact */
@@ -274,24 +292,8 @@ footer h3{
     margin-bottom:10px;
 }
 
-/* Responsive */
+/* WhatsApp */
 
-@media(max-width:768px){
-
-    .navbar{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .hero-content h1{
-        font-size:45px;
-    }
-
-    .hero-content p{
-        font-size:20px;
-    }
-
-}
 .whatsapp{
     position:fixed;
     bottom:20px;
@@ -309,177 +311,201 @@ footer h3{
     box-shadow:0 5px 15px rgba(0,0,0,0.3);
     z-index:1000;
 }
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        gap:15px;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .logo img{
+        width:140px;
+    }
+
+}
+
 </style>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
- 
 </head>
-<a href="https://wa.me/917207486110" class="whatsapp" target="_blank">
-   💬
-</a>
+
 <body>
 
-  <!-- Navbar -->
+<!-- WhatsApp -->
 
-  <header>
-    <nav class="navbar">
+<a href="https://wa.me/917207486110" class="whatsapp" target="_blank">
+💬
+</a>
 
-      <div class="logo">
-        EverGlow Studio
-      </div>
+<!-- Navbar -->
 
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+<header>
 
-    </nav>
-  </header>
-  <!-- Hero Section -->
+<nav class="navbar">
 
-  <section class="hero" id="home">
+<div class="logo">
+<img src="logo.png" alt="EverGlow Logo">
+</div>
 
-    <div class="overlay"></div>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-    <div class="hero-content">
+</nav>
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
-      <a href="#contact" class="btn">
-        Book Now
-      </a>
-      <marquee><h2>Make Every Bride Shine Beautifully</h2></marquee>
+</header>
 
+<!-- Hero Section -->
 
-    </div>
+<section class="hero" id="home">
 
-  </section>
-  <!-- About -->
+<div class="overlay"></div>
 
-  <section class="about" id="about">
+<div class="hero-content">
 
-    <div class="about-container">
+<h1>EverGlow Studio</h1>
 
-      <div class="about-text">
+<p>Make Every Bride Shine Beautifully ✨</p>
 
-        <h2>About Us</h2>
+<a href="#contact" class="btn">
+Book Now
+</a>
 
-        <p>
-          EverGlow Studio is a passionate bridal beauty team providing professional Mehndi,
-          Bridal Makeup, Saree Draping and Mobile Photography services for weddings,
-          engagements and special occasions.
-        </p>
+</div>
 
-        <p>
-          We make every celebration elegant, stylish and memorable.
-        </p>
+</section>
 
-      </div>
+<!-- About -->
 
-    </div>
+<section class="about" id="about">
 
-  </section>
+<h2>About Us</h2>
 
-  <!-- Services -->
+<p>
+EverGlow Studio is a passionate bridal beauty team providing professional Mehndi,
+Bridal Makeup, Saree Draping and Mobile Photography services.
+</p>
 
-  <section class="services" id="services">
+<p>
+We make every celebration elegant, stylish and memorable.
+</p>
 
-    <h2>Our Services</h2>
+</section>
 
-    <div class="service-container">
+<!-- Services -->
 
-      <div class="card">
-        <h3>Mehndi</h3>
-        <p>Bridal Mehndi, Arabic Designs & Event Mehndi</p>
-      </div>
+<section class="services" id="services">
 
-      <div class="card">
-        <h3>Makeup</h3>
-        <p>Bridal Makeup, Party Makeup & HD Looks</p>
-      </div>
+<h2>Our Services</h2>
 
-      <div class="card">
-        <h3>Saree Draping</h3>
-        <p>Traditional & Modern Saree Draping Styles</p>
-      </div>
+<div class="service-container">
 
-      <div class="card">
-        <h3>Photography</h3>
-        <p>Mobile Photography & Beautiful Reels</p>
-      </div>
+<div class="card">
+<h3>Mehndi</h3>
+<p>Bridal Mehndi, Arabic Designs & Event Mehndi</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>Makeup</h3>
+<p>Bridal Makeup, Party Makeup & HD Looks</p>
+</div>
 
-  </section>
+<div class="card">
+<h3>Saree Draping</h3>
+<p>Traditional & Modern Saree Draping Styles</p>
+</div>
 
-  <!-- Gallery -->
+<div class="card">
+<h3>Photography</h3>
+<p>Mobile Photography & Beautiful Reels</p>
+</div>
 
-  <section class="gallery" id="gallery">
+</div>
 
-     <h2>Gallery</h2>
+</section>
 
-    <div class="gallery-container">
+<!-- Gallery -->
 
-     <img src="photo.jpg" alt="">
+<section class="gallery" id="gallery">
 
+<h2>Gallery</h2>
+
+<div class="gallery-container">
+
+<img src="photo.jpg" alt="">
 <img src="mehandi.jpg" alt="">
-
 <img src="sareedraping.jpeg" alt="">
-
 <img src="makeup.jpg" alt="">
 
-    </div>
+</div>
 
-  </section>
+</section>
 
-  <!-- Contact -->
+<!-- Contact -->
 
-  <section class="contact" id="contact">
+<section class="contact" id="contact">
 
-    <h2>Book Your Event</h2>
+<h2>Book Your Event</h2>
 
-    <form>
+<form>
 
-      <input type="text" placeholder="Your Name" required>
+<input type="text" placeholder="Your Name" required>
 
-      <input type="tel" placeholder="Phone Number" required>
+<input type="tel" placeholder="Phone Number" required>
 
-      <input type="date" required>
+<input type="date" required>
 
-      <select>
-        <option>Select Service</option>
-        <option>Mehndi</option>
-        <option>Makeup</option>
-        <option>Saree Draping</option>
-        <option>Photography</option>
-      </select>
+<select>
+<option>Select Service</option>
+<option>Mehndi</option>
+<option>Makeup</option>
+<option>Saree Draping</option>
+<option>Photography</option>
+</select>
 
-      <textarea rows="5" placeholder="Message"></textarea>
+<textarea rows="5" placeholder="Message"></textarea>
 
-      <button type="submit">
-        Send Booking
-      </button>
+<button type="submit">
+Send Booking
+</button>
 
-    </form>
+</form>
 
-  </section>
+</section>
+
+<!-- Footer -->
 
 <footer>
 
-   <h3>EverGlow Studio</h3>
+<h3>EverGlow Studio</h3>
 
-   <p>
-      Mehndi • Makeup • Saree Draping • Photography
-   </p>
+<p>
+Mehndi • Makeup • Saree Draping • Photography
+</p>
 
-   <p>
-      Making Every Bride Glow ✨
-   </p>
+<p>
+Making Every Bride Glow ✨
+</p>
 
 </footer>
+
 </body>
 </html>
